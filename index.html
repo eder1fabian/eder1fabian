@@ -1,14 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    
     <title>Document</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
+<header>
+<center>
+<img src="seguranca-imagem-animada-0004.gif" alt="">
 
-  adfsadfasdmente um texto para teste de certos aspectos de desenvolvimento
-    mais modificações necessarias fçlakdjfçlkadjçlfakjdçlfkadçlkfaa
-    APENAS MAIS modificações
+
+</center>
+
+
+</header>
+<body>
+  
+  <div class="entrar">
+
+      
+      <div id="all">
+        <div id="login-box">
+          <div id="login-header">
+            <h1>Faça login no sistema</h1>
+          </div>
+          <br />
+          <div id="login-inputs">
+            <input type="text" placeholder="Nome de usuário" name="usuario"><br />
+            <br />
+            <input type="password" placeholder="Senha" name="senha">
+          </div>
+          <br />
+          <div id="enviar">
+            <input type="button" onclick="Login()" class="botao" value="Login"><br />
+            <a href="#">Esqueceu a sua senha?</a>
+          </div>
+        </div>
+      </div>   
+
+<script>
+      function Login() {
+        var done=0;
+        var usuario = document.getElementsByName('usuario')[0].value;
+        usuario=usuario.toLowerCase();
+        var senha= document.getElementsByName('senha')[0].value;
+        seha=senha.toLowerCase();
+        if (usuario=="admin" && senha=="admin") {
+          window.location="https://www.google.com";
+          done=1;
+        }
+        if (done==0) { alert("DADOS INCORRETOS!!!!"); }
+      }
+
+</script>
+
+
+</div>
 </body>
 </html>
